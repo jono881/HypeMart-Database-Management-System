@@ -1,0 +1,56 @@
+.text-field {
+    -fx-background-color: transparent ;
+    -fx-border-color: #FF8038;
+    -fx-font-family:  'Work Sans', sans-serif;
+    -fx-border-width: 0 0 1 0;
+    -fx-text-fill: #EFEDE8;
+    -fx-prompt-text-fill: #EFEDE8;
+}
+
+.choice-box{
+    -fx-background-color: transparent;
+    -fx-border-color: #FF8038;
+    -fx-font-family:  'Work Sans', sans-serif;
+    -fx-border-width: 0 0 1 0;
+    -fx-mark-color: #003249;
+    -fx-prompt-text-fill: #EFEDE8;
+    -fx-alignment: CENTER-RIGHT;
+}
+
+
+/* code below derives from website:
+https://stackoverflow.com/questions/43530178/style-choicebox-list-with-css-in-javafx
+*/
+
+/* Background color of the whole context menu */
+.choice-box .context-menu { 
+    -fx-background-color: #EFEDE8;
+}
+/* Focused item background color in the list */
+.choice-box .menu-item:focused { 
+    -fx-background-color: #FF8038;
+}
+/* Text color of non-focused items in the list */
+.choice-box .menu-item > .label { 
+    -fx-text-fill: #003249;
+}
+/* Text color of focused item in the list */
+.choice-box .menu-item:focused > .label { 
+    -fx-text-fill: #EFEDE8;
+}
+
+/* Selected item text color on the control itself */
+.choice-box > .label { 
+    -fx-text-fill: #EFEDE8;
+}
+
+.anchor-pane{
+    -fx-background-color: #EFEDE8;
+
+}
+
+.text{
+    -fx-font-family:  'Work Sans', sans-serif;
+    -fx-text-fill: #003249;
+}
+

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.infs2605.AboutController">
+   <children>
+      <VBox alignment="CENTER" minHeight="600.0" minWidth="200.0" prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #033249;">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Screenshot%20(38).png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <HBox fx:id="dashboardHBox111" onMouseClicked="#switchToDashboard" prefHeight="50.0" prefWidth="250.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="10.0" />
+                  <ImageView fitHeight="30.0" fitWidth="30.0" onMouseClicked="#switchToDashboard" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/business-report.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="8.0" left="10.0" top="8.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <HBox prefHeight="100.0" prefWidth="10.0" />
+                  <Button mnemonicParsing="false" onAction="#switchToDashboard" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: transparent; -fx-text-fill: EFEDE8; -fx-alignment: CENTER_LEFT; -fx-font-family: 'Work Sans', sans-serif; -fx-font-weight: bold;" text="Dashboard">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="supplierHBox111" onMouseClicked="#switchToSupplier" prefHeight="50.0" prefWidth="250.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="10.0" />
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/delivery%20(2).png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="8.0" left="10.0" top="8.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <HBox prefHeight="100.0" prefWidth="10.0" />
+                  <Button onAction="#switchToSupplier" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: transparent; -fx-text-fill: EFEDE8; -fx-alignment: CENTER_LEFT; -fx-font-family: 'Work Sans', sans-serif; -fx-font-weight: bold;" text="Suppliers">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="ordersHBox111" onMouseClicked="#switchToEditOrder" prefHeight="50.0" prefWidth="250.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="10.0" />
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/contract%20(1).png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="8.0" left="10.0" top="8.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <HBox prefHeight="100.0" prefWidth="10.0" />
+                  <Button mnemonicParsing="false" onAction="#switchToEditOrder" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: transparent; -fx-text-fill: EFEDE8; -fx-alignment: CENTER_LEFT; -fx-font-family: 'Work Sans', sans-serif; -fx-font-weight: bold;" text="My Orders">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="newOrderHBox111" onMouseClicked="#switchToCreateOrder" prefHeight="50.0" prefWidth="250.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="10.0" />
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/add%20(1).png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="8.0" left="10.0" top="8.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <HBox prefHeight="100.0" prefWidth="10.0" />
+                  <Button onAction="#switchToCreateOrder" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: transparent; -fx-text-fill: EFEDE8; -fx-alignment: CENTER_LEFT; -fx-font-family: 'Work Sans', sans-serif; -fx-font-weight: bold;" text="New Order">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="orderStatusHBox111" onMouseClicked="#switchToOrderStatuses" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="10.0" />
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/update-arrow.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="8.0" left="10.0" top="8.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <HBox prefHeight="100.0" prefWidth="10.0" />
+                  <Button onAction="#switchToOrderStatuses" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: transparent; -fx-text-fill: EFEDE8; -fx-alignment: CENTER_LEFT; -fx-font-family: 'Work Sans', sans-serif; -fx-font-weight: bold;" text="Order Status">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="orderStatusHBox11111" onMouseClicked="#switchToOrderStatuses" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="10.0" />
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/settings.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="8.0" left="10.0" top="8.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <HBox prefHeight="100.0" prefWidth="10.0" />
+                  <Button prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: transparent; -fx-text-fill: EFEDE8; -fx-alignment: CENTER_LEFT; -fx-font-family: 'Work Sans', sans-serif; -fx-font-weight: bold;" text="Settings">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox fx:id="aboutUsHBox211" onMouseClicked="#switchToAboutUs" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: ff8038;">
+               <children>
+                  <HBox prefHeight="50.0" prefWidth="10.0" />
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/information%20(1).png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="8.0" left="10.0" top="8.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <HBox prefHeight="50.0" prefWidth="10.0" />
+                  <Button onAction="#switchToAboutUs" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: transparent; -fx-text-fill: EFEDE8; -fx-alignment: CENTER_LEFT; -fx-font-family: 'Work Sans', sans-serif; -fx-font-weight: bold;" text="About Us" textAlignment="CENTER">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="orderStatusHBox1111" onMouseClicked="#switchToOrderStatuses" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="10.0" />
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/help.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="8.0" left="10.0" top="8.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <HBox prefHeight="100.0" prefWidth="10.0" />
+                  <Button prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: transparent; -fx-text-fill: EFEDE8; -fx-alignment: CENTER_LEFT; -fx-font-family: 'Work Sans', sans-serif; -fx-font-weight: bold;" text="Help">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox fx:id="aboutUsHBox111" onMouseClicked="#switchToAboutUs" prefHeight="50.0" prefWidth="250.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="10.0" />
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/exit%20(3).png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="8.0" left="10.0" top="8.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <HBox prefHeight="100.0" prefWidth="10.0" />
+                  <Button onAction="#switchToPrimary" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: transparent; -fx-text-fill: EFEDE8; -fx-alignment: CENTER_LEFT; -fx-font-family: 'Work Sans', sans-serif; -fx-font-weight: bold;" text="Logout" textAlignment="CENTER">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="75.0" prefWidth="250.0" />
+         </children>
+      </VBox>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="700.0" prefHeight="600.0" prefWidth="700.0">
+         <children>
+            <Text fx:id="about" fill="#033249" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: 'Work Sans', sans-serif; -fx-font-weight: bold;" text="About Us" wrappingWidth="183.56448364257812">
+               <font>
+                  <Font size="29.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text fx:id="copyrightStatement" fill="#033249" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright © 2020. We, the developers of this software application, declare that it isour work towards an assessment item submitted to fulfil the requirements of INFS2605(UNSW Sydney). We declare that it is our own work, except where acknowledged,and has not been submitted for academic credit elsewhere. We acknowledge that theassessor of this item may, for the purpose of assessing this item: Reproduce thisassessment item and provide a copy to another member of the University; and/or,Communicate a copy of this assessment item to a plagiarism checking service (whichmay then retain a copy of the assessment item on its database for the purpose of futureplagiarism checking). We certify that we have read and understood the UNSWUniversity Rules in respect of Student Academic Misconduct." wrappingWidth="635.1000366210938">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text fx:id="references" fill="#033249" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: 'Work Sans', sans-serif; -fx-font-weight: bold;" text="List of all included third-party libraries and multimedia items" wrappingWidth="693.7666625976562">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="https://www.flaticon.com/free-icon/update-arrow_66758 &quot;designed by Freepik from Flaticon">
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="https://www.flaticon.com/free-icon/exit_1286853 designed by Freepik from Flaticon">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="https://www.flaticon.com/free-icon/delivery_709790 designed by Kiranshastry from Flaticon">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="https://www.flaticon.com/free-icon/contract_684831 designed by Freepik from Flaticon">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="https://www.flaticon.com/free-icon/add_992651 designed by dmitri13 from Flaticon">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="wix.com for logo of &quot;HypeMart&quot;">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="https://www.flaticon.com/free-icon/information_545674 designed by Freepik from Flaticon">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="https://www.flaticon.com/free-icon/business-report_3408612?term=dashboard&amp;page=1&amp;position=25 designed by Freepik from Flaticon" wrappingWidth="673.0">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="https://www.flaticon.com/free-icon/search_483356 designed by Those Icons from Flaticon">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="https://www.flaticon.com/free-icon/information_906794 designed by Freepik from Flaticon">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="https://www.flaticon.com/free-icon/settings_2099058?term=gear&amp;page=1&amp;position=6 designed by Freepik from Flaticon" wrappingWidth="660.0064086914062">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="https://create.piktochart.com/output/50740747-my-visual?fbclid=IwAR1p1INNCPXW-Y274UUxm1FEFS67QJwdQI5lTR5vg_jHPRhZri-1Bx42yr4" wrappingWidth="654.375">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="https://stackoverflow.com/questions/43530178/style-choicebox-list-with-css-in-javafx" wrappingWidth="654.375">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>
